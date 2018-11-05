@@ -79,6 +79,12 @@
     <Content Include="NorthwindEntities.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>NorthwindEntities.Context.cs</LastGenOutput>
+      <DependentUpon>NorthwindEntities.edmx</DependentUpon>
+    </Content>
+    <Content Include="NorthwindEntities.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>NorthwindEntities.edmx</DependentUpon>
+      <LastGenOutput>NorthwindEntities.cs</LastGenOutput>
     </Content>
     <Content Include="Products.aspx" />
     <Content Include="ProductsByCat.aspx" />
@@ -87,6 +93,9 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Categories.cs">
+      <DependentUpon>NorthwindEntities.tt</DependentUpon>
+    </Compile>
     <Compile Include="HomeLap.aspx.cs">
       <DependentUpon>HomeLap.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -106,6 +115,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>NorthwindEntities.Context.tt</DependentUpon>
     </Compile>
+    <Compile Include="NorthwindEntities.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NorthwindEntities.tt</DependentUpon>
+    </Compile>
     <Compile Include="NorthwindEntities.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -117,6 +131,10 @@
     </Compile>
     <Compile Include="Products.aspx.designer.cs">
       <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products.cs">
+      <DependentUpon>NorthwindEntities.tt</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ProductsByCat.aspx.cs">
       <DependentUpon>ProductsByCat.aspx</DependentUpon>
@@ -133,6 +151,9 @@
     <Compile Include="Supplier.aspx.designer.cs">
       <DependentUpon>Supplier.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Suppliers.cs">
+      <DependentUpon>NorthwindEntities.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="NorthSite.Master" />
@@ -140,9 +161,9 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>NorthwindEntities.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="NorthwindEntities.edmx.diagram">
+    <Content Include="NorthwindEntities.edmx.diagram">
       <DependentUpon>NorthwindEntities.edmx</DependentUpon>
-    </None>
+    </Content>
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
