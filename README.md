@@ -1,0 +1,2 @@
+# szofttechgyak
+Szoftvertechnologia gyak 
