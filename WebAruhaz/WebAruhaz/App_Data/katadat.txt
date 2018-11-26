@@ -1,0 +1,5 @@
+﻿1;BMX kerékpárok
+2;City kerékpárok
+3;Cross kerékpárok
+4;Cruizer kerékpárok
+5;Elektromos kerékpárok

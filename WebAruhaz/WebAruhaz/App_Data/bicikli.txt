@@ -1,0 +1,18 @@
+﻿1;Dema Como;Dema Bicycle;Unisex;95900;como.jpg;1
+2;Mali Jump;Mali;Unisex;59900;mali.jpg;1
+3;Dema Shadow;Dema Bicycle;Unisex;109900;shadow.jpg;1
+4;Orion Lady;Dema Bicycle;Női;78900;orion.jpg;2
+5;Gepida Nedao 1000 Nexus;Olimpia Kft.;Unisex;626900;nedao.jpg;5
+6;Neuzer California;Neuzer Kft.;Férfi;75600;california.jpg;4
+7;Dema Lugo;Dema Bicycle;Férfi;79900;lugo.jpg;2
+8;Neuzer Balaton 26;Neuzer Kft.;Női;52200;balaton.jpg;2
+9;Hauser Swan 700C;Hauser;Női;65600;swan.jpg;2
+10;Gepida 28 Classic;Olimpia Kft.;Női;114900;gepida28.jpg;2
+11;Hauser Grizzly;Hauser;Férfi;68300;grizzly.jpg;3
+12;Crossride 350 Lady;Rock Machine;Női;189900;crossride.jpg;3
+13;Superior RX 590;Superior;Férfi;219900;superior.jpg;3
+14;Neuzer Beach;Neuzer Kft.;Női;60300;beach.jpg;4
+15;Neuzer Leopard Chopper;Neuzer Kft.;Férfi;96300;leopard.jpg;4
+16;Gepida Alboin 1000;Olimpia Kft.;Női;683900;alboin.jpg;5
+17;Badbike BadDog Husky;Accell group;Férfi;725000;husky.jpg;5
+18;Badbike BadCat Birman;Accell group;Női;625000;birman.jpg;5

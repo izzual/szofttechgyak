@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
-  <siteMapNode url="~/HomeLap.aspx" title="Home"  description="Home">
-    <siteMapNode url="~/Products.aspx" title="Termékek"  description="A termékek táblát mutatja." />
-    <siteMapNode url="~/Supplier.aspx" title="Szállítók"  description="A szállítók táblát mutatja." />
-    <siteMapNode url="~/ProductsByCat.aspx" title="Termékek kategóriánként" description="Termékek csoportosítva" />
-  </siteMapNode>
-</siteMap>
