@@ -13,5 +13,9 @@ namespace WebAruhaz
         {
 
         }
+
+        protected long BicikliList_GetData() {
+
+        }
     }
 }
