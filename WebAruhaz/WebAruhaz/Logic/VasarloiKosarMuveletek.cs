@@ -70,5 +70,22 @@ namespace WebAruhaz.Logic {
                     select c).ToList();
         }
 
+        public decimal GetOsszesen() {
+            VasarloiKosarId = GetKosarId();
+
+            decimal? osszesen = decimal.Zero;
+            osszesen = (decimal?)(from kosarElemek in db.VasarloiKosarElemek
+                                  where kosarElemek.KosarId == VasarloiKosarId
+                                  select (int?)kosarElemek.Mennyiseg * kosarElemek.Bicikli.Egysegar).Sum();
+            return osszesen ?? decimal.Zero;
+        }
+
+        public VasarloiKosarMuveletek GetKosar(HttpContext context) {
+            using (var kosar = new VasarloiKosarMuveletek()) {
+                kosar.VasarloiKosarId = kosar.GetKosarId();
+                return kosar;
+            }
+        }
+
     }
 }
