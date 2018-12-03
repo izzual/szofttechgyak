@@ -45,6 +45,11 @@
                                    <b >Ár: </b><%#:String.Format("{0:c}",Item.Egysegar) %>
                                </span>
                                <br />
+                               <a href="/KosarbaTesz.aspx?bicikliID=<%#:Item.BicikliID %>">
+                                   <span class="BicikliListaElem">
+                                       <b>Kosárba tesz</b>
+                                   </span>
+                               </a>
                            </td>
                        </tr>
                        <tr>
