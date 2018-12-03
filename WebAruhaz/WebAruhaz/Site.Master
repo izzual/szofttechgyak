@@ -24,6 +24,7 @@
                 <asp:ScriptReference Name="MsAjaxBundle" />
                 <asp:ScriptReference Name="jquery" />
                 <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="respond" />
                 <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
                 <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
                 <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
@@ -73,33 +74,32 @@
                 </div>
             </div>
         </div>
-        <div id="TitleContent" style="text-align:center">
+        <div id="TitleContent" style="text-align:center" >
             <a runat="server" href="~/">
-                <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/logo.jpg" 
-                    BorderStyle="None"/>
+                <asp:Image ID="Image1" runat="server" 
+                    ImageUrl="~/Images/biciklikklogo.jpg" BorderStyle="None" />
             </a>
             <br />
         </div>
         <div id="KategoriaMenu" style="text-align:center">
-            <asp:ListView ID="kategoriaList" 
-                ItemType="WebAruhaz.Models.Kategoria" runat="server" 
-                SelectMethod="GetKategoriak">
-                <ItemTemplate>
-                    <b style="font-size:large; font-style:normal">
-                        <a href="BicikliLista.aspx?id=<%#: Item.KategoriaID %>">
-                            <%#: Item.KatNev %>
-                        </a>
-                    </b>
-                </ItemTemplate>
-                <ItemSeparatorTemplate>|</ItemSeparatorTemplate>
-            </asp:ListView>
+        <asp:ListView ID="KategoriaList" ItemType="WebAruhaz.Models.Kategoria" runat="server" 
+            SelectMethod="GetKategoriak">
+            <ItemTemplate>
+                <b style="font-size: large; font-style: normal">
+                    <a href="BicikliLista.aspx?id=<%#: Item.KategoriaID %>">
+                        <%# Item.KatNev %>
+                    </a>
+                </b>
+            </ItemTemplate>
+            <ItemSeparatorTemplate> | </ItemSeparatorTemplate>
+        </asp:ListView>
         </div>
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Webáruház</p>
+                <p>&copy; <%: DateTime.Now.Year %> - Web áruház</p>
             </footer>
         </div>
     </form>

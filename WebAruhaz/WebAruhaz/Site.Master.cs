@@ -73,15 +73,24 @@ namespace WebAruhaz
         {
 
         }
-        public IQueryable<Kategoria> GetKategoriak() {
-            var db = new BicikliContext();
-            IQueryable<Kategoria> query = db.Kategoriak;
-            return query;
-        }
+
         protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
         {
             Context.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
         }
+
+        // The return type can be changed to IEnumerable, however to support
+        // paging and sorting, the following parameters must be added:
+        //     int maximumRows
+        //     int startRowIndex
+        //     out int totalRowCount
+        //     string sortByExpression
+        public IQueryable<Kategoria> GetKategoriak() {
+            var db = new WebAruhaz.Models.BicikliContext();
+            IQueryable<Kategoria> query = db.Kategoriak;
+            return query;
+        }
+        
     }
 
 }

@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="BicikliReszletek.aspx.cs" Inherits="WebAruhaz.BicikliReszletek" %>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:FormView runat="server" ID="Reszletek" ItemType="WebAruhaz.Models.Bicikli" DataKeyNames="BicikliID" RenderOuterTable="False" SelectMethod="Egybicikli">
+    <asp:FormView ID="Reszletek" runat="server" DataKeyNames="BicikliID" 
+        ItemType="WebAruhaz.Models.Bicikli" RenderOuterTable="False" SelectMethod="EgyBicikli">
         <ItemTemplate>
             <div>
                 <h1><%#:Item.ModelNev %></h1>
@@ -11,12 +11,11 @@
                 <tr>
                     <td>
                         <img src="/Catalog/<%#:Item.Kepfajl %>"
-                            style="border: solid; height: 300px" alt="<%#:Item.ModelNev %>" />
+                            style="border:solid;height:300px" alt="<%#:Item.ModelNev %>" />
                     </td>
                     <td>&nbsp;</td>
-                    <td style="vertical-align: top; text-align: left;">
-                        <b>Gyártó:</b><br />
-                        <%#:Item.Gyarto %><br />
+                    <td style="vertical-align:top;text-align:left;">
+                        <b>Gyártó:</b><br /><%#:Item.Gyarto %><br />
                         <span><b>Ár:</b>&nbsp;<%#:String.Format("{0:c}",Item.Egysegar) %></span>
                         <br />
                         <span>

@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.ComponentModel.DataAnnotations;
 
 namespace WebAruhaz.Models
@@ -17,10 +14,9 @@ namespace WebAruhaz.Models
         public string Tipus { get; set; }
         public int Egysegar { get; set; }
         public string Kepfajl { get; set; }
-        public Nullable<int> KategoriaID { get; set; }
-        //vagy public int? KategoriaID{get; set;}
+        public Nullable<int> KategoriaID { get; set; } // vagy: public int? KategoriaID
 
-        //kapcsolat a bicikli oldaláról a kategória felé 1:1
+        // 1:1 kapcsolat a bicikli oldaláról
         public virtual Kategoria Kategoria { get; set; }
     }
 }

@@ -13,5 +13,8 @@ namespace WebAruhaz.Models
         }
         public DbSet<Kategoria> Kategoriak { get; set; }
         public DbSet<Bicikli> Biciklik { get; set; }
+        public DbSet<KosarElem> VasarloiKosarElemek { get; set; }
+
+
     }
 }

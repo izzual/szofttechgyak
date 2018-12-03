@@ -19,8 +19,8 @@ namespace WebAruhaz
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-            //Inicializáljuk a WebAruhaz adatbázist
-            Database.SetInitializer(new BicikliDBFeltolt());
+            //Inicializáljuk az adatbázist
+            Database.SetInitializer(new BicikliFeltolt());
         }
     }
 }
