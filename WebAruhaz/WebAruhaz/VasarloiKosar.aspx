@@ -38,4 +38,14 @@
         </div>
     </div>
     <br />
+    <table>
+        <tr>
+            <td>
+                <asp:Button id="btnUpdate" runat="server" Text="Módosít" OnClick="btnUpdate_Click" />
+            </td>
+            <td>
+                <!--visszaigazolas, ellenorzes -->
+            </td>
+        </tr>
+    </table>
 </asp:Content>
