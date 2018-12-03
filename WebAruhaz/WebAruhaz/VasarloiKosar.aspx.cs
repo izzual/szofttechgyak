@@ -9,7 +9,10 @@ using WebAruhaz.Logic;
 
 namespace WebAruhaz {
     public partial class VasarloiKosar : System.Web.UI.Page {
+
+ 
         protected void Page_Load(object sender, EventArgs e) {
+
 
             using (VasarloiKosarMuveletek usersVasarloiKosar = new VasarloiKosarMuveletek()) {
                 decimal kosarOsszesen = 0;
@@ -19,10 +22,12 @@ namespace WebAruhaz {
                 } else {
                     LabelTotalText.Text = "";
                     lblTotal.Text = "";
-                    VasarloiKosarCim.InnerText = "A vaásárlói (sic) kosár üres!";
+                    VasarloiKosarCim.InnerText = "A vásárlói kosár üres!";
+                    btnUpdate.Visible = false;
                 }
             }
         }
+
 
         public List<KosarElem> GetVasarloiKosarElemek() {
             VasarloiKosarMuveletek muveletek = new VasarloiKosarMuveletek();
