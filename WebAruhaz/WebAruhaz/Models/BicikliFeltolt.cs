@@ -24,7 +24,7 @@ namespace WebAruhaz.Models
 
         private static List<Kategoria> BeolvKategoria()
         {
-            StreamReader reader = File.OpenText(@"d:\Oktatas\Szoftveretchnologia\Felev2017_18Osz\Programok\Gyak8Progr\WebAruhaz\WebAruhaz\App_Data\katadat.txt");
+            StreamReader reader = File.OpenText(@"E:\ai7ga9\szofttechgyak\WebAruhaz\WebAruhaz\App_Data\katadat.txt");
            // StreamReader reader = File.OpenText(HttpContext.Current.Server.MapPath("~/App_Data/katadat.txt"));
             var kategoria = new List<Kategoria>();
             Kategoria kateg;
