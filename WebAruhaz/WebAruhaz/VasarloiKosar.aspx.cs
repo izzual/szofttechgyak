@@ -33,5 +33,13 @@ namespace WebAruhaz {
             VasarloiKosarMuveletek muveletek = new VasarloiKosarMuveletek();
             return muveletek.GetKosarElemek();
         }
+
+        protected void btnUpdate_Click(object sender, EventArgs e) {
+            UpdateKosarElemek();
+        }
+
+        private void UpdateKosarElemek() {
+            throw new NotImplementedException();
+        }
     }
 }
